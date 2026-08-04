@@ -6,4 +6,4 @@ net_price = price - vat
 vat = price * 0.07
 st.header(f"• ราคาสุทธิ: {net_price:.2f} บาท")
 st.divider()
-st.write("นางสาวนวรัตน์ แสนภิบาล เลขที่ 32 ม.4/9")
+st.write("นางสาวนวรัตน์ แสนภิบาล เลขที่ 32  ม.4/9")
