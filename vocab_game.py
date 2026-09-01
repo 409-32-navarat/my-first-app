@@ -47,8 +47,8 @@ def show_result_dialog(ans1, ans2,):
         
     st.info(f"🏆 ได้คะแนนรวม: {score} คะแนน")
     
-    # ปรับเกณฑ์ชนะเป็น 4 คะแนนเต็มตามจำนวนข้อ
-    if score == 4:
+    if score == 2
+        :
         st.success("🎉 You win!")
     else:
         st.error("💀 You lose!")
@@ -80,21 +80,12 @@ ans2 = st.text_input(
     value=st.session_state.ans2_val,
 )
 
-# [พื้นที่สำหรับนักเรียน] : เพิ่มข้อ 3, 4 ตรงนี้
-ans3 = st.text_input(
-    "ข้อ 3: A `b _ r d` can fly high in the sky. 🐦",
-    value=st.session_state.ans3_val,
-)
-ans4 = st.text_input(
-    "ข้อ 4: A `d _ g` is known as man's best friend. 🐶",
-    value=st.session_state.ans4_val,
-)
-
 # อัปเดตค่าล่าสุดเข้าตัวแปร
 st.session_state.ans1_val = ans1
 st.session_state.ans2_val = ans2
-st.session_state.ans3_val = ans3 # [เพิ่ม]
-st.session_state.ans4_val = ans4 # [เพิ่ม]
+
+
+
 
 # 4. ปุ่มส่งคำตอบ
 if "start" in st.session_state and not st.session_state.get("is_ended", False):
@@ -109,7 +100,4 @@ if "start" in st.session_state and not st.session_state.get("is_ended", False):
 if st.session_state.get("is_ended", False):
     show_result_dialog(ans1, ans2, ans3, ans4)
 
-st.divider()
-st.write("นางสาวนวรัตน์ แสนภิบาล เลขที่ 32 ม.4/9")
-```
 
